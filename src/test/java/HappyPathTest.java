@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class HappyPathTest {
 
     @Test
-    void HappyPathTest() {
+    void shouldSuccessfulSubmitForm() {
         open("http://localhost:9999");
         $("[data-test-id=\"name\"] input").sendKeys("Иванов-Петров Иван");
         $("[data-test-id=\"phone\"] input").sendKeys("+79998877654");
